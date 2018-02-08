@@ -1,7 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <beans xmlns="http://www.springframework.org/schema/beans"
-	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:aop="http://www.springframework.org/schema/aop"
-	xmlns:tx="http://www.springframework.org/schema/tx" xmlns:context="http://www.springframework.org/schema/context"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+	xmlns:aop="http://www.springframework.org/schema/aop"
+	xmlns:tx="http://www.springframework.org/schema/tx" 
+	xmlns:p="http://www.springframework.org/schema/p"
+	xmlns:context="http://www.springframework.org/schema/context"
 	xsi:schemaLocation="
        http://www.springframework.org/schema/beans 
        http://www.springframework.org/schema/beans/spring-beans-3.0.xsd
@@ -16,7 +19,9 @@
 	<context:annotation-config></context:annotation-config>
 
 	<!-- 加载外部的properties配置文件 -->
-	<context:property-placeholder location="classpath:jdbc.properties" />
+	<!-- <context:property-placeholder location="classpath:jdbc.properties" /> -->
+	<bean class="com.gyb.ssh.util.EncryptPropertyPlaceholderConfigurer" 
+	      p:location="classpath:jdbc.properties"></bean> 
 
 	<!-- 配置数据库连接池（c3p0） -->
 	<bean id="dataSource" class="com.mchange.v2.c3p0.ComboPooledDataSource">

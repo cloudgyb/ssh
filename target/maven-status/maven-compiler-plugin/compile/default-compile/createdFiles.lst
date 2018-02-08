@@ -1,6 +1,8 @@
 com\gyb\ssh\action\ListUserAction.class
 com\gyb\ssh\service\UserServiceImpl.class
 com\gyb\ssh\action\JsonAction.class
+com\gyb\ssh\util\DESUtil.class
+com\gyb\ssh\util\EncryptPropertyPlaceholderConfigurer.class
 com\gyb\ssh\action\TestAction.class
 com\gyb\ssh\service\UserService.class
 com\gyb\ssh\action\IndexAction.class
