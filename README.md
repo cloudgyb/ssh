@@ -1,5 +1,5 @@
 # SSH 整合项目示例
-#### 这是一个Maven项目
+#### 这是一个Maven项目  github仓库：https://github.com/cloudgyb/ssh
 
 ### 开发环境说明：
   - Eclipse
