@@ -6,7 +6,7 @@
     * 数据库版本mysql57
     * 驱动 5.1.40
   - Spring
-   	*版本4.3.14.RELEASE
+   	* 版本4.3.14.RELEASE
   - Struts 
     * 版本 2.5.14.1
   - Hibernate
